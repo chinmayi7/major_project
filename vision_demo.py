@@ -8,9 +8,9 @@ client = vision.ImageAnnotatorClient()
 FILE_NAME = 'text1.jpg'
 FOLDER_PATH = r'C:\Users\User\Documents\icr_vision_demo\venv\texts'
  
-   with io.open(os.path.join(FOLDER_PATH,FILE_NAME), 'rb') as image_file:
-     content = iamge_file.read()
+with io.open(os.path.join(FOLDER_PATH,FILE_NAME), 'rb') as image_file:
+    content = iamge_file.read()
 
-     image = vision.types.Image(content=content)
+    image = vision.types.Image(content=content)
 
-     response = client.text_detection(image=image)
+    response = client.text_detection(image=image)
