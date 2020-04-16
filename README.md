@@ -6,6 +6,7 @@
 ```
 pip install pandas
 pip install --upgrade google-cloud-vision
+pip install opencv--python
 ```
 
 
